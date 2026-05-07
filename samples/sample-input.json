@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "id": "diff-approval-1",
+      "title": "比較・差分承認ビュー サンプル 1",
+      "basePath": "before.md",
+      "targetPath": "after.md",
+      "decision": "approve",
+      "risk": "low"
+    },
+    {
+      "id": "diff-approval-missing-required",
+      "title": "必須項目不足サンプル",
+      "targetPath": "after.md",
+      "decision": "approve",
+      "risk": "low"
+    }
+  ]
+}
