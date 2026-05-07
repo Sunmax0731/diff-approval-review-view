@@ -16,3 +16,9 @@
 - Domain: ProjectManagement
 - Source idea No: 5
 - Publish target: GitHub Release
+
+## Product Polish Rules
+
+- MVP後の改善では、機能、UI/UX、責務分割、テスト、リリース準備を同時に確認する。
+- QCDS評価は `docs/qcds-evaluation.md` を正とし、全観点 `A-` 以上になるまで改善する。
+- 今後の別アイデアでも、`docs/responsibility-map.md` と `docs/ui-ux-polish.md` をMVP後の標準成果物にする。
