@@ -191,7 +191,7 @@
           "description": "docs ZIPが生成済みである",
           "kind": "zip",
           "pass": true,
-          "detail": "diff-approval-review-view-docs.zip 9950 bytes"
+          "detail": "diff-approval-review-view-docs.zip exists and exceeds minimum size"
         }
       ]
     },
