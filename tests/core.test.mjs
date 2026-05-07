@@ -4,8 +4,9 @@ import { analyzeItems, renderMarkdownReport } from '../src/core.mjs';
 
 test('valid sample passes required field checks', () => {
   const report = analyzeItems({ items: [{
-  "id": "diff-approval-1",
-  "title": "比較・差分承認ビュー サンプル 1",
+  "id": "diff-approval-review-view-1",
+  "title": "差分承認レビュー画面 サンプル1",
+  "status": "ready",
   "basePath": "before.md",
   "targetPath": "after.md",
   "decision": "approve",
@@ -17,8 +18,9 @@ test('valid sample passes required field checks', () => {
 
 test('missing required field is reported', () => {
   const report = analyzeItems({ items: [{
-  "id": "diff-approval-missing-required",
+  "id": "diff-approval-review-view-missing-required",
   "title": "必須項目不足サンプル",
+  "status": "ready",
   "targetPath": "after.md",
   "decision": "approve",
   "risk": "low"

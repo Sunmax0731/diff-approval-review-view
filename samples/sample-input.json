@@ -2,7 +2,7 @@
   "items": [
     {
       "id": "diff-approval-review-view-1",
-      "title": "比較・差分承認ビュー サンプル 1",
+      "title": "差分承認レビュー画面 サンプル1",
       "status": "ready",
       "basePath": "before.md",
       "targetPath": "after.md",

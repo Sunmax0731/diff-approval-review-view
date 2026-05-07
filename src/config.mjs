@@ -1,7 +1,7 @@
 export const productConfig = {
   "repo": "diff-approval-review-view",
-  "titleJa": "比較・差分承認ビュー",
-  "summary": "差分レビューと承認判断の明確化",
+  "titleJa": "差分承認レビュー画面",
+  "summary": "差分、承認判断、リスク、次アクションを同じレビュー単位で整理する。",
   "requiredFields": [
     "basePath",
     "targetPath",
