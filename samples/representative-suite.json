@@ -1,0 +1,120 @@
+{
+  "product": "diff-approval-review-view",
+  "title": "差分承認レビュー画面",
+  "benchmarkRepos": [
+    "Sunmax0731/movie-telop-transcriber",
+    "Sunmax0731/codex-remote-android"
+  ],
+  "requiredFields": [
+    "basePath",
+    "targetPath",
+    "decision",
+    "risk"
+  ],
+  "scenarios": [
+    {
+      "id": "happy-path",
+      "purpose": "差分、承認判断、リスク、次アクションの正常入力を確認する",
+      "input": {
+        "items": [
+          {
+            "id": "diff-approval-review-view-happy",
+            "title": "差分承認レビュー画面 happy",
+            "basePath": "before.md",
+            "targetPath": "after.md",
+            "decision": "approve",
+            "risk": "low",
+            "status": "ready"
+          }
+        ]
+      },
+      "expected": {
+        "result": "passed",
+        "errors": 0,
+        "warnings": 0
+      }
+    },
+    {
+      "id": "missing-required",
+      "purpose": "必須項目不足をerrorとして検出する",
+      "input": {
+        "items": [
+          {
+            "id": "diff-approval-review-view-missing-required",
+            "title": "差分承認レビュー画面 missing-required",
+            "targetPath": "after.md",
+            "decision": "approve",
+            "risk": "low",
+            "status": "ready"
+          }
+        ]
+      },
+      "expected": {
+        "result": "failed",
+        "errors": 1,
+        "warnings": 0
+      }
+    },
+    {
+      "id": "blocked-status",
+      "purpose": "blocked状態をwarningとして検出する",
+      "input": {
+        "items": [
+          {
+            "id": "diff-approval-review-view-blocked",
+            "title": "差分承認レビュー画面 blocked",
+            "basePath": "before.md",
+            "targetPath": "after.md",
+            "decision": "approve",
+            "risk": "low",
+            "status": "blocked"
+          }
+        ]
+      },
+      "expected": {
+        "result": "warning",
+        "errors": 0,
+        "warnings": 1
+      }
+    },
+    {
+      "id": "mixed-batch",
+      "purpose": "正常、必須不足、警告を同一バッチで集計する",
+      "input": {
+        "items": [
+          {
+            "id": "diff-approval-review-view-happy",
+            "title": "差分承認レビュー画面 happy",
+            "basePath": "before.md",
+            "targetPath": "after.md",
+            "decision": "approve",
+            "risk": "low",
+            "status": "ready"
+          },
+          {
+            "id": "diff-approval-review-view-missing-required",
+            "title": "差分承認レビュー画面 missing-required",
+            "targetPath": "after.md",
+            "decision": "approve",
+            "risk": "low",
+            "status": "ready"
+          },
+          {
+            "id": "diff-approval-review-view-blocked",
+            "title": "差分承認レビュー画面 blocked",
+            "basePath": "before.md",
+            "targetPath": "after.md",
+            "decision": "approve",
+            "risk": "low",
+            "status": "blocked"
+          }
+        ]
+      },
+      "expected": {
+        "result": "failed",
+        "errors": 1,
+        "warnings": 1
+      }
+    }
+  ]
+}
