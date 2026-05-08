@@ -1,0 +1,32 @@
+{
+  "product": "diff-approval-review-view",
+  "repository": "Sunmax0731/diff-approval-review-view",
+  "githubUrl": "https://github.com/Sunmax0731/diff-approval-review-view",
+  "tag": "v0.1.0-alpha.1",
+  "releaseUrl": "https://github.com/Sunmax0731/diff-approval-review-view/releases/tag/v0.1.0-alpha.1",
+  "prerelease": true,
+  "latest": false,
+  "assetCount": 3,
+  "assets": [
+    "diff-approval-review-view-docs.zip",
+    "manual-test.md",
+    "strict-manual-test-addendum.md"
+  ],
+  "platformRuntimeGate": "dist/platform-runtime-gate-result.json",
+  "platformType": "cli-release-tool",
+  "manualTest": "not-run-by-codex",
+  "qcdsEvaluation": {
+    "Quality": "S-",
+    "Cost": "S-",
+    "Delivery": "S-",
+    "Satisfaction": "S-",
+    "capReason": "manual-test-not-run-by-codex"
+  },
+  "github": {
+    "repo": "Sunmax0731/diff-approval-review-view",
+    "url": "https://github.com/Sunmax0731/diff-approval-review-view",
+    "releaseUrl": "https://github.com/Sunmax0731/diff-approval-review-view/releases/tag/v0.1.0-alpha.1",
+    "prerelease": true,
+    "latest": false
+  }
+}

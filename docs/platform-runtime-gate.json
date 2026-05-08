@@ -1,0 +1,11 @@
+{
+  "product": "diff-approval-review-view",
+  "title": "比較・差分承認ビュー",
+  "domain": "ProjectManagement",
+  "ideaNo": 5,
+  "platformType": "cli-release-tool",
+  "expectedPublicTarget": "GitHub Release",
+  "browser": null,
+  "android": null,
+  "evidence": "dist/platform-runtime-gate-result.json"
+}
